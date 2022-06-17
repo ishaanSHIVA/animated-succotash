@@ -1,12 +1,15 @@
-import styles from "../styles/Home.module.css";
+// import Main from "../components/Main.jsx";
+import Sidebar from "../components/SideBar.jsx";
 
-import Sidebar from "../components/Sidebar";
-
+const styles = {
+  container: "h-full w-full flex bg-[#fff]",
+};
 export default function Home() {
   return (
-    <>
-      <h1>hi</h1>
-      <Sidebar></Sidebar>
-    </>
+    <div className={styles.container}>
+      {/* hello */}
+      <Sidebar />
+      {/* <Main /> */}
+    </div>
   );
 }
