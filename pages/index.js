@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {/* hello */}
-      <Sidebar />
+      {/* <Sidebar /> */}
+      <h1>hi</h1>
       {/* <Main /> */}
     </div>
   );
