@@ -1,5 +1,6 @@
 // import Main from "../components/Main.jsx";
 import Sidebar from "../components/SideBar.jsx";
+import React from "react";
 
 const styles = {
   container: "h-full w-full flex bg-[#fff]",
