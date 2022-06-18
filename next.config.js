@@ -18,6 +18,7 @@ const nextConfig = {
     NEXT_MORALIS_SERVER: process.env.NEXT_MORALIS_SERVER,
     NEXT_PUBLIC_MORALIS_APP_ID: process.env.NEXT_PUBLIC_MORALIS_APP_ID,
   },
+  webpack5: true,
 };
 
 module.exports = nextConfig;
