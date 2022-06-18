@@ -18,7 +18,16 @@ const nextConfig = {
     NEXT_MORALIS_SERVER: process.env.NEXT_MORALIS_SERVER,
     NEXT_PUBLIC_MORALIS_APP_ID: process.env.NEXT_PUBLIC_MORALIS_APP_ID,
   },
-  webpack5: true,
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      // don't resolve 'fs' module on the client to prevent this error on build --> Error: Can't resolve 'fs'
+      config.resolve.fallback = {
+        fs: false,
+      };
+    }
+
+    return config;
+  },
 };
 
 module.exports = nextConfig;
