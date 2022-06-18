@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {/* hello */}
-      {/* <Sidebar /> */}
-      <h1>hi</h1>
+      <Sidebar />
+      {/* <h1>hi</h1> */}
       {/* <Main /> */}
     </div>
   );
