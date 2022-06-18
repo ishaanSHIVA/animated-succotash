@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.18.2",
     "@openzeppelin/contracts": "^4.6.0",
     "@walletconnect/web3-provider": "^1.7.8",
     "@web3auth/web3auth": "^1.0.1",
